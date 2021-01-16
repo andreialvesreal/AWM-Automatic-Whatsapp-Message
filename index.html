@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Mensagem via WhatsApp</title>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="inicio()">
+	
+		<form method="post" id="formWpp">
+			<label for="nome"><p> Digite aqui o seu nome: </p></label>
+			<input type="text" id="nome">
+
+			<label for="assunto"><p> Digite aqui o assunto: </p></label>
+			<input type="text" id="assunto"><br>
+
+			<label for="numwpp"><p> Digite aqui o número do Whatsapp: </p></label>
+			<input type="text" id="numwpp"><br>
+
+			<input type="button" onclick="geraMsg()" value="Gerar Mensagem">
+
+			<p> Sua mensagem será exibida desta forma: </p>
+			<textarea id="msgPronta" readonly rows="10" cols="40"></textarea><br>
+			<a href="" id="link"><input type="button" value="Enviar" id="botaoEnviar"></a>
+		</form>
+</body>
+</html>
